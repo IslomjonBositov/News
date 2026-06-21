@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="./img/icon.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson05</title>
+    <title>All Customers</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,18 +28,32 @@
     <button class="main-btn" onclick="change()"></button>
   </div> -->
 
-    <article class="nav">
+    <aside class="nav">
       <div class="site-bar-looks">
-        <img onclick="toggleSide()" class="logo" src="./img/icon.png" alt="logo" />
+        <img
+          loading="eager"
+          onclick="toggleSide()"
+          class="logo"
+          src="./img/icon.png"
+          alt="logo"
+        />
         <ul>
-          <li><img src="./img/List Menu.png" alt="list menu" /></li>
-          <li><img src="./img/List Menu (1).png" alt="" /></li>
-          <li><img style="filter: brightness(0.5);" src="./img/List Menu (2).png" alt="" /></li>
-          <li><img src="./img/List Menu (3).png" alt="" /></li>
-          <li><img src="./img/List Menu (4).png" alt="" /></li>
-          <li><img src="./img/List Menu (5).png" alt="" /></li>
+          <li>
+            <img loading="lazy" src="./img/List Menu.png" alt="list menu" />
+          </li>
+          <li><img loading="lazy" src="./img/List Menu (1).png" alt="" /></li>
+          <li>
+            <img
+              loading="lazy"
+              style="filter: brightness(0.5)"
+              src="./img/List Menu (2).png"
+              alt=""
+            />
+          </li>
+          <li><img loading="lazy" src="./img/List Menu (3).png" alt="" /></li>
+          <li><img loading="lazy" src="./img/List Menu (4).png" alt="" /></li>
+          <li><img loading="lazy" src="./img/List Menu (5).png" alt="" /></li>
         </ul>
-        <img src="" alt="Profile" />
       </div>
 
       <div class="side">
@@ -52,7 +67,7 @@
           <li>Help</li>
         </ul>
         <div class="site-bar-info">
-          <h2>Upgrade to PRO to get access all Features!</h2>
+          <h3>Upgrade to PRO to get access all Features!</h2>
           <button>Get Pro Now!</button>
         </div>
         <div class="bar-profile">
@@ -60,9 +75,9 @@
           <p>Project Manager</p>
         </div>
       </div>
-    </article>
+    </aside>
 
-    <article class="main">
+    <main class="main">
       <header>
         <h2>Hello Evano 👋🏼,</h2>
 
@@ -73,7 +88,6 @@
       </header>
       <div class="main-persentage">
         <div class="persentage-box">
-          <img src="" alt="" />
           <div>
             <p
               style="
@@ -92,7 +106,6 @@
         </div>
 
         <div class="persentage-box">
-          <img src="" alt="" />
           <div>
             <p
               style="
@@ -110,15 +123,9 @@
         </div>
 
         <div class="persentage-box">
-          <img src="" alt="" />
           <div>
             <p
-              style="
-                color: #acacac;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 100%;
-              "
+              class="box-label"
             >
               Total Customers
             </p>
@@ -132,31 +139,30 @@
         <div class="custom-table-head">
           <h2>All Customers</h2>
           <div class="head-search">
-
             <div class="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="search" placeholder="Search" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search" />
 
-          <span style="padding: 10px 35px 10px 15px; color: #7e7e7e; background-color: #F9FBFF; border-radius: 10px;"
-            >Short by:
-            <select style="color: #333; font-weight: 700" name="" id="">
-              <option value="">New set</option>
-            </select>
-          </span>
-        </div>
-            
+              <span
+                class="sort-label"
+                >Short by:
+                <select style="color: #333; font-weight: 700" name="" id="">
+                  <option value="">New set</option>
+                </select>
+              </span>
+            </div>
           </div>
         </div>
 
         <div class="main-table">
           <table id="Table" style="font-weight: 500; font-size: 14px">
             <tr style="color: #b5b7c0; height: 30px">
-              <th style="padding-right: 157px">Customer Name</th>
-              <th style="padding-right: 161px">Company</th>
-              <th style="padding-right: 152px">Phone Number</th>
-              <th style="padding-right: 198px">Email</th>
-              <th style="padding-right: 96px">Country</th>
-              <th style="padding-right: 40px">Status</th>
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Status</th>
             </tr>
             <tr>
               <td>Jane Cooper</td>
@@ -172,21 +178,7 @@
               <td>(205) 555-0100</td>
               <td>floyd@yahoo.com</td>
               <td>Kiribati</td>
-              <td>
-                <button
-                  style="
-                    width: 80px;
-                    height: 29px;
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: #df0404;
-                    background-color: #ffc5c5;
-                    border: 1px solid #df0404;
-                    border-radius: 4px;
-                  "
-                >
-                  Inactive
-                </button>
+              <td><button>Inactive</button>
               </td>
             </tr>
             <tr>
@@ -196,20 +188,7 @@
               <td>ronald@adobe.com</td>
               <td>Israel</td>
               <td>
-                <button
-                  style="
-                    width: 80px;
-                    height: 29px;
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: #df0404;
-                    background-color: #ffc5c5;
-                    border: 1px solid #df0404;
-                    border-radius: 4px;
-                  "
-                >
-                  Inactive
-                </button>
+                <button class="btns-inactive">Inactive</button>
               </td>
             </tr>
             <tr>
@@ -252,20 +231,7 @@
               <td>kristin@facebook.com</td>
               <td>Åland Islands</td>
               <td>
-                <button
-                  style="
-                    width: 80px;
-                    height: 29px;
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: #df0404;
-                    background-color: #ffc5c5;
-                    border: 1px solid #df0404;
-                    border-radius: 4px;
-                  "
-                >
-                  Inactive
-                </button>
+                <button class="btns-inactive">Inactive</button>
               </td>
             </tr>
           </table>
@@ -293,7 +259,7 @@
           </div>
         </div>
       </div>
-    </article>
+    </main>
 
     <script src="./js/index.js"></script>
   </body>

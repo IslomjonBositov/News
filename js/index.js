@@ -24,7 +24,6 @@
 //   }, 5000)
 // }
 
-
 // let object = {
 //   firstName:  "Islomjon",
 //   lastName:  "Bositov",
@@ -52,11 +51,16 @@
 // const [alg, sta, lang, tara, spc] = arr;
 // console.log(lang);
 
+const side = document.querySelector(".side");
 
-const side = document.querySelector('.side')
-
-
-function toggleSide(){
-  side.classList.toggle('side-visible')
+function toggleSide() {
+  side.classList.toggle("side-visible");
 }
 
+document.addEventListener("click", function (e) {
+  const logo = document.querySelector(".logo");
+  
+  if (!side.contains(e.target) && e.target !== logo) {
+    side.classList.remove("side-visible");
+  }
+});
